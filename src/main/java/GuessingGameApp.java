@@ -3,8 +3,12 @@ import java.util.Scanner;
 public class GuessingGameApp {
 
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
 		GuessingGame game = new GuessingGame();
+		playGame(game);
+	}
+
+	private static void playGame(GuessingGame game) {
+		Scanner input = new Scanner(System.in);
 		boolean lose = true;
 		int guess;
 		for(int i = 0; i < 3; i++) {
